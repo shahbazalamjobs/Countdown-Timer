@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: #7F7FD5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+h1 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 600;
+    margin: 3.125rem 0 1.875rem;
+}
+
+/* -------------Input values --------------- */
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.upper,
+.lower {
+    display: flex;
+    gap: 0.65rem;
+}
+
+label {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.45rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px;
+}
+
+#year {
+    width: 100%;
+}
+
+button {
+    font-size: 1.3rem;
+    margin: 1rem 1rem;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ------------- Display Values --------------- */
+
+.container {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container>div {
+    padding: 1.25rem;
+    border-radius: 0.1875rem;
+    box-shadow: 0 0 0 rgba(0, 0, 0.1875rem, 0.3);
+    background: #6190e8;
+    width: 100%;
+    display: inline-block;
+}
+
+.container div>span {
+    padding: 1.25rem;
+    margin: 0.625rem;
+    border-radius: 0.1875rem;
+    background: #0575e6;
+    display: inline-block;
+}
+
+.smallText {
+    padding-top: 0.625rem;
+    font-size: 1.25rem;
+}
+
+#demo {
+    padding: 0.5rem;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+}
+
+
+/* ----------- Media Queries ------------- */
+
+@media only screen and (max-width: 321px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        margin: 0 0.4rem;
+        padding: 1.3rem;
+    }
+
+    .container>div {
+        width: 40%;
+        height: 9rem;
+        margin: 0.8rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .container>div {
+        width: 30%;
+        height: 9rem;
+        margin: 0.8rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .container>div>span {
+        /* height: 2.5rem;
+        align-items: center; */
+    }
+
+    button {
+        font-size: 1.2rem;
+        margin: 0 0.8rem;
+    }
+
+    .smallText {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .demo {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .container>div {
+        width: 20%;
+        margin-right: 1.4rem;
+    }
+
+    label {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    button {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .container>div {
+        width: 20%;
+        margin: 1rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+    }
+
+}
